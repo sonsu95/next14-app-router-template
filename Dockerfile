@@ -1,5 +1,5 @@
 # Stage 1: Base with pnpm installed
-FROM node:lts-alpine as base
+FROM node:lts-alpine AS base
 RUN npm install -g pnpm
 
 # Stage 2: Dependencies and application
