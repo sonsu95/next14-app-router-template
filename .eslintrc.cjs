@@ -10,7 +10,7 @@ module.exports = {
   plugins: ['react', 'react-hooks'],
   parser: '@typescript-eslint/parser',
   parserOptions: {
-    project: './tsconfig.ts',
+    project: './tsconfig.json',
   },
   rules: {
     '@typescript-eslint/no-unused-vars': 'off',
