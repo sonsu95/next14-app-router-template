@@ -12,11 +12,8 @@ module.exports = {
   parser: '@typescript-eslint/parser',
   parserOptions: {
     project: './tsconfig.json',
-    ecmaVersion: 2021,
+    tsconfigRootDir: __dirname,
     sourceType: 'module',
-    ecmaFeatures: {
-      jsx: true,
-    },
   },
   rules: {
     // TypeScript 관련 규칙
@@ -30,6 +27,7 @@ module.exports = {
     'react/react-in-jsx-scope': 'off',
     'react/prop-types': 'off',
     'react/jsx-props-no-spreading': 'off',
+    'react/require-default-props': 'off',
 
     // Import 관련 규칙
     'import/prefer-default-export': 'off',
